@@ -1,0 +1,45 @@
+{
+  "id": "ORD-123456",
+  "userId": "USER-789",
+  "orderDate": "2024-03-20T10:30:00Z",
+  "status": "PENDING",
+  "totalAmount": 299.99,
+  "shippingAddress": {
+    "street": "123 Main Street",
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "10001",
+    "country": "USA"
+  },
+  "items": [
+    {
+      "productId": "PROD-001",
+      "quantity": 2,
+      "price": 99.99,
+      "subtotal": 199.98
+    },
+    {
+      "productId": "PROD-002",
+      "quantity": 1,
+      "price": 100.01,
+      "subtotal": 100.01
+    }
+  ],
+  "paymentDetails": {
+    "paymentMethod": "CREDIT_CARD",
+    "transactionId": "TXN-987654",
+    "paymentStatus": "COMPLETED",
+    "amount": 299.99,
+    "currency": "USD",
+    "paymentDate": "2024-03-20T10:31:00Z"
+  },
+  "shippingDetails": {
+    "carrier": "FEDEX",
+    "trackingNumber": "FDX123456789",
+    "estimatedDeliveryDate": "2024-03-25T00:00:00Z",
+    "shippingCost": 15.99,
+    "shippingStatus": "IN_TRANSIT"
+  },
+  "createdAt": "2024-03-20T10:30:00Z",
+  "updatedAt": "2024-03-20T10:31:00Z"
+} 

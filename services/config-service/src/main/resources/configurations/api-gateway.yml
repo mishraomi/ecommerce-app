@@ -1,0 +1,28 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+          routes:
+            - id: product-service
+              uri: lb:http://PRODUCT-SERVICE
+              predicates:
+                - Path=/api/products/**
+            - id: cart-service
+              uri: lb:http://CART-SERVICE
+              predicates:
+                - Path=/api/carts/**
+            - id: order-service
+              uri: lb:http://ORDER-SERVICE
+              predicates:
+                - Path=/api/orders/**
+            - id: user-service
+              uri: lb:http://USER-SERVICE
+              predicates:
+                - Path=/api/users/**
+
+server:
+  port: 8088
